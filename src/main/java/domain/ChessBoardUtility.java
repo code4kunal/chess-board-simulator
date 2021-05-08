@@ -24,9 +24,9 @@ public class ChessBoardUtility {
        int rowIn = Integer.parseInt(rowIndex);
        int colIn = Integer.parseInt(ColIndexMapping.valueOf(columnIndex).getIndex());
        List<String> moves = new ArrayList<>();
-       for(int row = rowIn -1; row < rowIn + 2; row++){
+       for(int row = rowIn -1; row < rowIn + 2 && row < 9; row++){
            if(row <1) continue;
-           for(int col = colIn-1; col < colIn +2; col++){
+           for(int col = colIn-1; col < colIn +2 && col < 9; col++){
                if (col < 1) continue;
                String move = ChessBoardUtility.findColFromIndex(String.valueOf(col))+String.valueOf(row);
                if(!move.equalsIgnoreCase(columnIndex+rowIndex)) {
