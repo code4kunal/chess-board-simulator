@@ -1,0 +1,7 @@
+domain/ChessBoard$1.class
+constant/ColIndexMapping.class
+domain/ChessBoard.class
+domain/IChessBoard.class
+ChessBoardSimulator.class
+constant/ChessPiece.class
+domain/ChessBoardUtility.class
